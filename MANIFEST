@@ -28,5 +28,7 @@ JDockApp.bs
 makeitromscratch
 fix_alsos
 further
+pod2htmi.x~~
 MANIFEST.SKIP
+pod2htmd.x~~
 SIGNATURE

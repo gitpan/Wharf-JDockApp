@@ -128,7 +128,7 @@ void initXwindow(int argc, char *argv[]){
     int		 i;
     char	*display_name = NULL;
 
-    for (i=1; argv[i]; ++i) {
+    for (i=1; i<=argc; ++i) {
         if (!strcmp(argv[i], "-display")) display_name = argv[i+1];
     }
 

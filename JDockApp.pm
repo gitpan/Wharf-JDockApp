@@ -11,7 +11,7 @@ require AutoLoader;
     StartApp SetSetup SetExpose SetUpdate SetButton SetDelay ClearWindow
     BLUE CYAN GREEN INDIGO NUMBERS ORANGE PINK RED VIOLET YELLOW jprint jpprint
 );
-$VERSION = '1.2';
+$VERSION = '1.2.1';
 
 use Wharf::JDockApp::jtools;
 
@@ -108,6 +108,12 @@ The reason?  The XPM 'code' is compiled into the binary.
 =head1 AUTHOR
 
   Jettero Heller <jettero@voltar.org>
+
+=head1 THANKS
+
+Per Henrik Johansen <xxx@xxx.org>
+
+For helping hunt down some sagfaults.
 
 =head1 SEE ALSO
 
