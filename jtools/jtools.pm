@@ -8,8 +8,8 @@ require Exporter;
 require DynaLoader;
 require AutoLoader;
 
-@ISA = qw(Exporter DynaLoader);
-@EXPORT = qw( BLUE CYAN GREEN INDIGO NUMBERS ORANGE PINK RED VIOLET YELLOW jprint jpprint );
+@ISA     = qw(Exporter DynaLoader);
+@EXPORT  = qw( BLUE CYAN GREEN INDIGO NUMBERS ORANGE PINK RED VIOLET YELLOW jprint jpprint );
 
 $VERSION = '1.0'; # likely there won't be anymore updates to this stuff.
 

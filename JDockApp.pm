@@ -6,14 +6,16 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 require Exporter;
 require AutoLoader;
 
-@ISA = qw(Exporter AutoLoader);
+@ISA    = qw(Exporter AutoLoader);
 @EXPORT = qw( 
     StartApp SetSetup SetExpose SetUpdate SetButton SetDelay ClearWindow
     BLUE CYAN GREEN INDIGO NUMBERS ORANGE PINK RED VIOLET YELLOW jprint jpprint
 );
-$VERSION = '1';
+$VERSION = '1.1';
 
 use Wharf::JDockApp::jtools;
+
+return 1;
 
 sub SetSetup  { Wharf::JDockApp::jtools::set_setup( shift); }
 sub SetExpose { Wharf::JDockApp::jtools::set_expose(shift); }
@@ -28,7 +30,6 @@ sub SetDelay {
     Wharf::JDockApp::jtools::set_loop_delay(1000);
 }
 
-1;
 __END__
 
 =head1 NAME
