@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./distclean
+perl Makefile.PL && make dist
+mv *.gz ../archives

@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+
+$found = 0; 
+
+@files = `find -name \\*.pm -mindepth 1 -maxdepth 2`;
+chomp @files;
+
+foreach $file (@files) {
+    open in,  "$file";
+    open out, ">$file.$$";
+
+    while(<in>) { 
+        if(/head1 SEE ALSO/) { 
+            $found = 1; 
+            print out "$_"; 
+            next; 
+        } 
+        if($found and /\w+/) { 
+            @a = ( "perl(1)", "Wharf::JDockApp(3)" ); 
+            @f = `find -name \\*.pm -mindepth 2 -maxdepth 2`;
+            foreach(@f) {
+                m|([^/]+)[.]pm|;
+                push @a, "Wharf::JDockApp::$1(3)";
+            }
+            $s = join ", ", @a; 
+            print     "fix_alsos $file: $s.\n";
+            print out "$s.\n"; 
+            $found = 0; 
+        } else {
+            print out "$_";
+        }
+    }
+    close in;
+    close out; `mv $file.$$ $file`;
+}

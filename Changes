@@ -1,0 +1,60 @@
+1:  Wed Sep 20 07:38:51 EDT 2000
+   - jettero alter'd this distribution so it's now Wharf::'d
+
+0.9:  Sun Jul 30 23:18:23 EDT 2000
+   - jettero got ClearWindow to work!!!! Now I just need to
+     finish the docs!
+
+0.8:  Sun Jul 30 22:58:38 EDT 2000
+   - jettero tested lotsa stuff... and concluded that Clear
+     Window is one of the only things that's still broken.
+     This is just about ready to go! :)
+
+0.7:  Sun Jul 30 12:23:47 EDT 2000
+   - jettero got an actual window to pop up from test.pl
+
+0.6:  Sun Jul 30 10:26:03 EDT 2000
+   - jettero discovered that appsupport.c was the wrong
+     approach... jtools.xs became my application ... go
+     perl!
+
+0.5:  Sun Jul 30 00:30:11 EDT 2000
+   - jettero got jtools/ to compile ... finally. We're going
+     to have trouble with the .xs stuff
+
+0.4:  Sat Jul 29 13:24:27 EDT 2000
+   - jettero wtf is a boot_jtools anyway? ... Starting the
+     h2xs over for jtools ... *frown*
+   - The correct solution would have been to put jtools.o in
+     the Makefile.PL
+
+0.4:  Sat Jul 29 13:12:10 EDT 2000
+   - jettero added makemakes and got jtools/ to compile with
+     the new jtools/appsupport.c. App Support is a funny
+     funny legacy naming scheme. See, the old setup and
+     do_expose (et cetera) were supposed to be defined int
+     he app itself. That won't really work with perl though.
+     :)
+
+0.3:  Sat Jul 29 12:18:26 EDT 2000
+   - jettero thinks jtools/ nearly ready. He also made
+     distclean...
+
+0.2:  Sat Jul 29 12:03:58 EDT 2000
+   - jettero went back to square 1 and started jtools/ over
+     ...
+
+0.4:  Sat Jul 29 11:38:52 EDT 2000
+   - jettero got jtools/ to almost compile ... almost
+
+0.3:  Sat Jul 29 11:33:26 EDT 2000
+   - jettero realized that xutils/ needs to be
+     jtools/xutils/ ... and moved it thusly
+
+0.2:  Sat Jul 29 11:28:46 EDT 2000
+   - jettero got xutils/ and jtools/ to compile!
+
+0.1:  Sat Jul 29 11:00:31 EDT 2000
+   - jettero installed I manifestbuilder fix_alsos xutils/
+     jtools/
+

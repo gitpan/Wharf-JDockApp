@@ -1,0 +1,6 @@
+#!/bin/sh
+
+perl Makefile.PL
+make distclean 
+./fix_alsos
+./manifestbuilder
