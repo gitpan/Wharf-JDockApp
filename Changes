@@ -1,3 +1,7 @@
+1.2:  Fri Aug  1 09:40:20 EDT 2003
+   - jettero made a useless patch that shouldn't help ...
+     but does.  I also added some modern tests, and a signature.
+
 1.1:  Thu Sep 21 14:37:21 EDT 2000
    - jettero fix'ed a couple of typos...
 

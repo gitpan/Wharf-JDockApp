@@ -1,0 +1,6 @@
+Makefile
+^blib
+\.o$
+\.bs$
+jtools.c
+pm_to_blib

@@ -11,7 +11,7 @@ require AutoLoader;
     StartApp SetSetup SetExpose SetUpdate SetButton SetDelay ClearWindow
     BLUE CYAN GREEN INDIGO NUMBERS ORANGE PINK RED VIOLET YELLOW jprint jpprint
 );
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 use Wharf::JDockApp::jtools;
 

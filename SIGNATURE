@@ -1,0 +1,54 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.26.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 60a45f871386dd8a835eb25b3f8affd3647ca94d Changes
+SHA1 26f7eb2b436430962f530556b4c47f423a22a42e Distro
+SHA1 ad98be7d7283b0b210481188bb7c0bf893706c91 I
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 JDockApp.bs
+SHA1 b06241f0cdb374680cfb44559c15815bff89b56d JDockApp.pm
+SHA1 fb6ebc177d174f52a7c9e82129843f9a1bf9afd4 MANIFEST
+SHA1 3ecce9398697be523740a287303098bca70fa49d MANIFEST.SKIP
+SHA1 e1d360343a3ac3675481252600c3965ad47ba3f7 Makefile.PL
+SHA1 dd344f97fb8b8c68ae6e0a2a49d418f32beeaaa2 distclean
+SHA1 fa0711b057ac01283eb47cecb81edb89cac6de5b examples/wmjmail
+SHA1 8837514616190e6aa6903d171ed52649b621a893 fix_alsos
+SHA1 832f7db2e3616a0e6d54cd6ee70f400edcc6b24d format.scr
+SHA1 20547b54fb0734b35990da5cd232f8caf5427890 further
+SHA1 1c7efd011675cb43be274c32a39518472b064f23 jtools/Changes
+SHA1 cfc01eeefbc78b55ea246deb4685b0bae61ca86a jtools/Makefile.PL
+SHA1 7123d851f193cd24732cf9efb50ed3af3356544b jtools/colors.h
+SHA1 5b80ce88c0ebb4649b2b942648ec4ee4d0743f05 jtools/jDockApp.c
+SHA1 b2ea4bedb2d0039f4ec15ee4cacc4db37a9bc769 jtools/jDockApp.h
+SHA1 56335c03749ad9bb88e12917099d814952799088 jtools/jDockApp_main.xpm
+SHA1 513ecf03b40e9bf8c31111c9e506ec9623d60200 jtools/jDockApp_mask.xbm
+SHA1 23220880f5908ae112bb2da8ba63df6dab31eb98 jtools/jprintf.c
+SHA1 1624fa84813c952283635e6bf1b4514552223bc4 jtools/jtools.pm
+SHA1 e54a3ad77849b41b15c28fa014e0565ef1527d48 jtools/jtools.xs
+SHA1 0e356ec1a4b81c5b6a80ebaf850d840ef307900b jtools/locations.h
+SHA1 6ad473ed93441f00719092676f8999262670f79e jtools/xutils.c
+SHA1 9cc8c7a9b93ac5758cbecb4e706316c7d8b5c115 jtools/xutils.h
+SHA1 67aa7b3d2e33d87eb1cb910356dc0775272dd3a0 makeitromscratch
+SHA1 512b3f2c05b58e824e96c05de8ef6d4b3926af9c manifestbuilder
+SHA1 f9ab64c20ceddf0561077af5c6812f1b4a6f235a t/main.t
+SHA1 2fcadb54f39c1e8b406e2b032c78bb7d8670b1dc t/signature.t
+SHA1 1e27dfed15a4114c41bea894a57b927f87639034 t/test.pl
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.2 (GNU/Linux)
+
+iD8DBQE/KnQY5OVNEZoM2pkRAgJ7AKCr0WDyLst/zFqDt9ne5f8Y9MWZAACglOgp
+lkpf0ZVJHbIHP9ZtB3lzfvc=
+=dUQh
+-----END PGP SIGNATURE-----

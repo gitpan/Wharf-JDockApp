@@ -339,3 +339,6 @@ clear_window()
 
 void 
 start_app()
+    CODE:
+    fprintf(stderr, ""); // this shouldn't help, but it does.
+    start_app();

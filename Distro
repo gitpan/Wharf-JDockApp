@@ -1,5 +1,12 @@
 #!/bin/sh
 
+rm *.tar.gz
+
 ./distclean
-perl Makefile.PL && make dist
-mv *.gz ../archives
+cpansign sign
+perl Makefile.PL
+make dist
+
+ssh voltar.org "(cd /home/dillhome/voltar/html/PerlModules; rm Wharf*.gz)"
+scp *.tar.gz voltar.org:/home/dillhome/voltar/html/PerlModules
+ssh voltar.org "(cd /home/dillhome/voltar/html/PerlModules; chmod 644 Wharf*.gz)"

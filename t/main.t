@@ -1,19 +1,23 @@
-BEGIN { $| = 1; print "1..1\n"; }
-END {print "not ok 1\n" unless $loaded;}
+# vi:fdm=marker fdl=0 syntax=perl:
+# $Id: main.t,v 1.9 2003/07/31 19:35:05 jettero Exp $
 
-use Wharf::JDockApp;
+use strict;
+use Test;
 
-$loaded = 1;
-print "ok 1\n";
+    plan tests => 2;
 
-exit 0;
+use Wharf::JDockApp; ok 1;
 
-########## DockApp Below! ;)
+my $count = 0;
 
 SetSetup( \&setup);
 SetExpose(\&expose);
 SetUpdate(\&update);
 SetButton(\&button);
+
+alarm 2;
+
+$SIG{ALRM} = sub {ok 2; exit 0}; # don't run away on us... But we need to test for sagfaults
 
 StartApp;
 
